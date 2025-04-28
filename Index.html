@@ -1,10 +1,26 @@
 <!--
-Name: [Your Name]
+Name: Oluseye Omobolade
 Course: Web Design
-Teacher: [Your Teacher's Name]
-School: [Your School Name]
-Date Last Modified: [Last Modified Date]
+Teacher: Ashley Hoitink
+School: pembina trails collegiate
+Date Last Modified: April/21/2025
 -->
+
+<!--
+This website was made for a school project about Treaty 1.
+
+The client wanted:
+- Easy-to-read information for students
+- A clean layout with pictures and videos
+- Clear sections about what Treaty 1 is, who signed it, and where
+
+This site includes:
+- Maps and images
+- Videos from YouTube
+- Simple navigation with multiple pages
+- A map showing the signing location
+-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,61 +29,90 @@ Date Last Modified: [Last Modified Date]
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treaty 1 - Manitoba</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-<header>
-    <h1>Treaty 1 - Manitoba</h1>
-    <p>Discover the history, terms, and modern significance of Treaty 1.</p>
-</header>
+    <header id="page-header">
+        <h1 id="main-title">Treaty 1 - Manitoba</h1>
+        <p id="intro-text">Learn about the history and importance of Treaty 1.</p>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="treaty_terms.html">Treaty Terms</a></li>
-        <li><a href="treaty_today.html">Treaty Today</a></li>
-    </ul>
-</nav>
-
-<main>
-    <section id="overview">
-        <h2>Welcome to Treaty 1</h2>
-        <p>Treaty 1 was signed in 1871 between the Canadian government and the Anishinaabe, Cree, and Ojibwe peoples. The treaty established an agreement on land use, rights, and promises that continue to affect the First Nations communities in Manitoba today.</p>
-        <p>This website will guide you through the history of Treaty 1, its terms, and how it influences communities today.</p>
-    </section>
-
-    <section id="location">
-        <h3>Where Was Treaty 1 Negotiated?</h3>
-        <p>The negotiations for Treaty 1 took place in what is now Winnipeg, Manitoba. The area was chosen because it was a central meeting point for different First Nations groups and the Canadian government.</p>
-        <img src="Images/treaty map.png" alt="Historic photo of Winnipeg" />
-    </section>
-
-    <section id="treaty-map">
-        <h3>Map of Treaty 1 Territory</h3>
-        <p>This map shows the territory that Treaty 1 covers, including parts of Manitoba. It was the first treaty signed as part of a series of Numbered Treaties in Canada.</p>
-        <img src="Images/treaty 1.jpg" alt="Map showing Treaty 1 territory in Manitoba" />
-    </section>
-
-    <section id="communities">
-        <h3>Communities Involved in Treaty 1</h3>
-        <p>The First Nations communities involved in Treaty 1 include the Anishinaabe (Saulteaux), Cree, and Ojibwe peoples. These groups have rich cultural histories that are intertwined with the land and its resources.</p>
+    <nav id="main-nav">
         <ul>
-            <li><strong>Anishinaabe (Saulteaux)</strong> - An Indigenous group located primarily in the southern parts of Manitoba.</li>
-            <li><strong>Cree</strong> - Another important nation, with ties to northern Manitoba and beyond.</li>
-            <li><strong>Ojibwe</strong> - An Indigenous group from the region of Lake Ontario and westward into Manitoba.</li>
+            <li><a href="index.html" id="nav-home">Home</a></li>
+            <li><a href="treaty_terms.html" id="nav-terms">Treaty Terms</a></li>
+            <li><a href="treaty_today.html" id="nav-today">Treaty Today</a></li>
         </ul>
-    </section>
-</main>
+    </nav>
 
-<script src="script.js"></script>
+    <main id="main-content">
+        <article id="article-treaty">
 
+            <section id="what-is-treaty1">
+                <h2>What is Treaty 1?</h2>
+                <p>Treaty 1 was signed in 1871 between the Canadian government and Indigenous peoples: the Anishinaabe, Cree, and Ojibwe. It talked about land, rights, and promises.</p>
+            </section>
 
+            <section id="where-signed">
+                <h2>Where Was It Signed?</h2>
+                <p>The treaty was signed in what is now Winnipeg, Manitoba. It was a place where many people could meet.</p>
+                <figure>
+                    <img src="treaty map.png" alt="Map of treatys" id="treaty-map-image">
+                    <figcaption>Map showing Treaty 1 location</figcaption>
+                </figure>
+            </section>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/knOfEEYaBho?si=Gd2UMhY3ISjlQqui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>Sources</p>
-<a href="https://www.biographi.ca/en/topics/topic-match-list.php?id=1732"Sources></a>
-<a href="https://treaty1.ca/visionary-treaty-1-chiefs-experienced-strategists/"Sources></a>
-</body>
+            <section id="treaty1-map">
+                <h2>Map of Treaty 1 Land</h2>
+                <p>This map shows the land that is part of Treaty 1, mostly in southern Manitoba.</p>
+                <figure>
+                    <img src="treaty 1.jpg" alt="Map of Treaty 1 land" id="treaty1-land-image">
+                    <figcaption>Map of Treaty 1 land in Manitoba</figcaption>
+                </figure>
+            </section>
+
+            <section id="who-involved">
+                <h2>Who Was Involved?</h2>
+                <ul>
+                    <li><strong>Anishinaabe (Saulteaux)</strong> - Lived in southern Manitoba</li>
+                    <li><strong>Cree</strong> - Lived in northern Manitoba</li>
+                    <li><strong>Ojibwe</strong> - Lived around Lake Ontario and into Manitoba</li>
+                </ul>
+            </section>
+
+            <section id="watch-videos">
+                <h2>Watch Videos</h2>
+                <div id="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/knOfEEYaBho" title="Treaty 1 History" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/watch?v=knOfEEYaBho">Watch on YouTube</a>
+
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/cKeOG9DLqTQ" title="Treaty Rights Explained" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/watch?v=cKeOG9DLqTQ">Watch on YouTube</a>
+
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/8uB83G7xZgU" title="First Nations Perspectives" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/watch?v=8uB83G7xZgU">Watch on YouTube</a>
+                </div>
+            </section>
+
+            <section id="visit-site">
+                <h2>Visit the Treaty Site</h2>
+                <p>This is where the treaty was signed. You can see it on the map below!</p>
+                <iframe id="treaty-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.760628429488!2d-96.93705452287173!3d50.109487271529055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1744933881441!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen></iframe>
+            </section>
+
+            <section id="sources">
+                <h2>Sources</h2>
+                <ul>
+                    <li><a href="https://treaty1.ca/">Treaty 1 Website</a></li>
+                    <li><a href="https://treaty1.ca/visionary-treaty-1-chiefs-experienced-strategists/">Treaty 1 Chiefs</a></li>
+                    <li><a href="https://www.biographi.ca/en/topics/topic-match-list.php?id=1732">Canadian Biography</a></li>
+                    <li><a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2">The Canadian Encyclopedia</a></li>
+                    <li><a href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html">Canada.ca</a></li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
 </body>
 </html>

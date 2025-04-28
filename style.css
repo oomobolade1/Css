@@ -1,152 +1,259 @@
-/* Default page styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* 
+Color Theme: Green and Teal
+
+I picked green and teal because they remind us of nature, land, and peace. 
+These colours match the topic of Treaty 1, which is about land and agreements 
+with Indigenous peoples. Green stands for the land and growth. Teal adds a 
+calm and respectful feel to the website.
+*/
+
+
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+/* Header */
 header {
-    background-color: #000000;
+    background-color: #004c3f;
     color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
+header h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
 nav {
-    background-color: #000000;
-    padding: 10px;
-    text-align: center;
+    background-color: #00735d;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav li {
+    margin: 10px 20px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
-    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    background-color: #005a47;
+    border-radius: 5px;
+}
+
+/* Main Content */
 main {
-    margin: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-h1, h2, h3 {
-    color: #333;
+/* Sections */
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-h2 {
+section h2, section h3 {
+    color: #004c3f;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Sources Section */
+.sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     margin-top: 20px;
-    font-size: 1.8em;
+}
+
+.source-box {
+    background-color: #eaf5f3;
+    padding: 15px;
+    border-left: 5px solid #00735d;
+    border-radius: 6px;
+}
+
+.source-box h4 {
+    margin-bottom: 10px;
+    color: #00735d;
+}
+
+/* Footer */
+footer {
+    background-color: #004c3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sans-serif for clean, modern feel */
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #004c3f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #00735d;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #005e4b;
+    border-radius: 4px;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #004c3f;
 }
 
 h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #00735d;
+}
+
+/* Paragraphs and Lists */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 ul {
-    list-style: disc;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
-    background-color: #d7740bca;
-    color: white;
+    margin-top: 40px;
+    background-color: #e6f2ee;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #555;
 }
 
-img {
-    width: 100%;
-    max-width: 600px;
-    margin: 10px 0;
-    display: block;
-    border-radius: 8px;
-}
-/* Default page styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-image: url('Images/treaty\ 111.jpg'); /* Background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Header background color */
-header {
-    background-color: rgb(248, 148, 7); /* Semi-transparent blue */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #030303;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Main content background */
-main {
-    background-color: rgba(255, 255, 255, 0.9); /* White with some transparency */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-/* Footer background */
-footer {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-img {
-    width: 100%;
-    max-width: 600px;
-    margin: 10px 0;
-    display: block;
-    border-radius: 8px;
-}
 
